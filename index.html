@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NN Vape - Premium Vape Shop Jakarta Barat</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header id="header">
+        <nav>
+            <div class="logo">🌪️ NN VAPE</div>
+            <ul class="nav-links">
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#location">Lokasi</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Cari produk..." id="searchInput">
+                    <i class="fas fa-search" style="color:#00d4ff;"></i>
+                </div>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🌪️ NN VAPE</h1>
+            <p>Premium Vape Shop #1 Jakarta Barat</p>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Koleksi Terlengkap • Harga Terbaik • Kualitas Terjamin</p>
+            <button class="cta-button" onclick="scrollToSection('#products')">🛍️ Belanja Sekarang</button>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Tentang NN Vape</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Mengapa Memilih NN Vape?</h3>
+                <p>NN Vape adalah toko vape terpercaya di Jakarta Barat dengan pengalaman lebih dari 5 tahun melayani pelanggan setia.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <p><strong>Produk Original</strong> - Semua produk 100% original dengan garansi resmi</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <p><strong>Harga Kompetitif</strong> - Harga paling murah se-Jakarta Barat</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <p><strong>Layanan Terbaik</strong> - Tim profesional siap membantu Anda 24/7</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <p><strong>Pengiriman Cepat</strong> - Free ongkir Jakarta Barat min Rp 300rb</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                🌪️💨
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Produk Populer</h2>
+        <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="location" id="location">
+        <div class="location-content">
+            <h2>📍 Lokasi Toko Kami</h2>
+            <div class="location-grid">
+                <div class="address">
+                    <h3 style="margin-bottom: 1rem;">NN Vape Store</h3>
+                    <p><i class="fas fa-map-marker-alt" style="color:#00d4ff;margin-right:10px;"></i>Jl. Benda No. 123, Jakarta Barat 11810</p>
+                    <p><i class="fas fa-phone" style="color:#00d4ff;margin-right:10px;"></i><a href="tel:+6281234567890" style="color:white;text-decoration:none;">+62 812-3456-7890</a></p>
+                    <p><i class="fas fa-envelope" style="color:#00d4ff;margin-right:10px;"></i><a href="mailto:info@nnvape.com" style="color:white;text-decoration:none;">info@nnvape.com</a></p>
+                    <p><i class="fas fa-clock" style="color:#00d4ff;margin-right:10px;"></i>Senin - Minggu: 10:00 - 21:00 WIB</p>
+                    <div class="social-links" style="margin-top: 2rem;">
+                        <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/nnvape" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/nnvape" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://tiktok.com/@nnvape" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div>
+                        <i class="fas fa-map" style="font-size:3rem;margin-bottom:1rem;"></i>
+                        <p>📍 Kunjungi toko kami di Jakarta Barat</p>
+                        <p style="margin-top:1rem;font-size:0.9rem;">Lokasi strategis, mudah diakses dari berbagai area</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" style="padding: 5rem 2rem; background: #f5f5f5; text-align: center;">
+        <h2 style="margin-bottom: 2rem; color: #1a1a2e;">Hubungi Kami</h2>
+        <p style="margin-bottom: 1.5rem; color: #666;">Ada pertanyaan? Kami siap membantu Anda!</p>
+        <a href="https://wa.me/6281234567890" target="_blank" class="cta-button">
+            <i class="fab fa-whatsapp"></i> Chat di WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NN VAPE</h3>
+                <p>Toko vape terpercaya di Jakarta Barat dengan koleksi produk terlengkap dan harga terbaik.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigasi</h3>
+                <ul style="list-style: none;">
+                    <li><a href="#about" style="color:#ccc;text-decoration:none;">Tentang Kami</a></li>
+                    <li><a href="#products" style="color:#ccc;text-decoration:none;">Produk</a></li>
+                    <li><a href="#location" style="color:#ccc;text-decoration:none;">Lokasi</a></li>
+                    <li><a href="#contact" style="color:#ccc;text-decoration:none;">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Layanan Pelanggan</h3>
+                <ul style="list-style: none;">
+                    <li><a href="#" style="color:#ccc;text-decoration:none;">Syarat & Ketentuan</a></li>
+                    <li><a href="#" style="color:#ccc;text-decoration:none;">Kebijakan Privasi</a></li>
+                    <li><a href="#" style="color:#ccc;text-decoration:none;">Pengembalian Barang</a></li>
+                    <li><a href="#" style="color:#ccc;text-decoration:none;">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Ikuti Kami</h3>
+                <div class="social-links">
+                    <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/nnvape" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/nnvape" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://tiktok.com/@nnvape" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NN VAPE. All rights reserved. | Premium Vape Shop Jakarta Barat</p>
+        </div>
+    </footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🛒 Keranjang Belanja</h2>
+            <div id="cartItems"></div>
+            <div style="margin-top: 2rem; text-align: right;">
+                <p style="font-size: 1.3rem; font-weight: 700; color: #ff6b6b;">Total: <span id="cartTotal">Rp 0</span></p>
+                <button class="cta-button" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
